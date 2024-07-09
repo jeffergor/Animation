@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            overflow: hidden; /* hides any part of the sun below the horizon */
+            background-color: lightblue;
+            display: flex;
+            justify-content: center; /* centers the sun in the background */
+          }
+        body {
+            margin: 0;
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-items: center;
+        }
+        .computer{
+            position: relative;
+            border: 5px solid black;
+            border-radius: 04px;
+            height: 550px;
+            width: 1200px;
+            bacKground: #CCEFFF;
+            box-shadow: 0 20px 38px rgba(0, 0, 0, 0.30), 0 12px 10px  rgba(0, 0, 0, 0.22);
+          
+        }
+    .layer-1, .layer-2, .layer-3, .layer-4, .layer-5, .layer-6, .layer-7, .layer-8, .layer-9, .layer-10, 
+    .layer-11, .layer-12, .layer-13, .layer-14, .layer-15, .layer-16, .layer-17, .layer-18, .layer-19, 
+    .layer-20, .layer-21, .layer-22, .layer-23, .layer-24, .layer-25, .layer-26, .layer-27, .layer-28, 
+    .layer-29, .layer-35, .layer-36, .layer-37, .layer-38 {
+        position: absolute;
+        bottom: 0;
+    }
+        @media (min-width: 290px) {
+            div {
+                background: blue(49, 96, 226);
+            }
+        }
+        input:checked{
+            counter-increment: game;
+        }
+        .total-count::after {
+            content: counter(game);
+        }
+        .layer-1 {
+            position: absolute;
+            z-index: 1;
+            height: 410px;
+            width: 120px;
+            background: palegoldenrod(236, 221, 133);;
+            bottom: 0;
+            right: 60px;
+        }
+        .layer-2 {
+            position: absolute;
+            z-index: 2;
+            height: 410px;
+            width: 120px;
+            background: palegoldenrod(236, 221, 133);
+            bottom: 0;
+            left: 60px;
+        }
+        .layer-3 {
+            z-index: 3;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 300px;
+            height: 250px;
+            background: rgba(245, 222, 179, 0.979);
+            bottom: 0;
+        }
+        .layer-4 {
+            position: absolute;
+            z-index: 4;
+            left: 60px;
+            right: 600px;
+            margin: 0 auto;
+            width: 90px;
+            height: 190px;
+            background: rgba(252, 252, 248, 0);
+            bottom: 0;
+        }
+        .layer-5 {
+            position: absolute;
+            z-index: 5;
+            height: 300px;
+            width: 100px;
+            background: rgba(255, 255, 255, 0);
+            bottom: 0;
+            right: 200px;
+        }
+        .layer-6 {
+            position: absolute;
+            z-index: 6;
+            height: 200px;
+            width: 80px;
+            background: rgba(255, 255, 255, 0);
+            bottom: 0;
+            right: 920px;
+        }
+        .layer-7 {
+            position: absolute;
+            z-index: 7;
+            left: 0;
+            right: 540px;
+            margin: 0 auto;
+            width: 100px;
+            height: 180px;
+            background: rgb(245, 222, 179);
+            bottom: 0;
+        }
+        .layer-8 {
+            position: absolute;
+            z-index: 8;
+            left: 850px;
+            right: 0;
+            margin: 0 auto;
+            width: 250px;
+            height: 280px;
+            background: rgb(245, 222, 179);
+            bottom: 0;
+        }
+        .layer-9 {
+            position: absolute;
+            z-index: 9;
+            left: 0;
+            right: 1000px;
+            margin: 0 auto;
+            width: 240px;
+            height: 290px;
+            background: rgb(245, 222, 179);
+            bottom: 0;
+        }
+        .layer-10 {
+            position: absolute;
+            z-index: 10;
+            left: 0;
+            right: 680px;
+            margin: 0 auto;
+            width: 50px;
+            height:190px;
+            background: rgb(127, 182, 38);
+            bottom: 0;
+        }
+        .layer-11 {
+            position: absolute;
+            z-index: 11;
+            right: 980px;
+            margin: 0 auto;
+            width: 50px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+        }
+        .layer-12 {
+            position: absolute;
+            z-index: 12;
+            right: 1039px;
+            margin: 0 auto;
+            width: 50px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+        }
+        .layer-13 {
+            position: absolute;
+            z-index: 13;
+            right: 1099px;
+            margin: 0 auto;
+            width: 50px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+
+        }
+        .layer-14 {
+            position: absolute;
+            z-index: 14;
+            right: 1156px;
+            margin: 0 auto;
+            width: 40px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+
+
+        }
+        .layer-15 {
+            position: absolute;
+            z-index: 15;
+            right: 875px;
+            margin: 0 auto;
+            width: 40px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+
+        }
+        .layer-16 {
+            position: absolute;
+            z-index: 16;
+            right: 821px;
+            margin: 0 auto;
+            width: 40px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+
+        }
+        .layer-17 {
+            position: absolute;
+            z-index: 17;
+            right: 710px;
+            margin: 0 auto;
+            width: 40px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+
+        }
+        .layer-18 {
+            position: absolute;
+            z-index: 18;
+            right: 660px;
+            margin: 0 auto;
+            width: 40px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+
+        }
+        .layer-19 {
+            position: absolute;
+            z-index: 19;
+            right: 610px;
+            margin: 0 auto;
+            width: 40px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+
+
+        }
+        .layer-20 {
+            position: absolute;
+            z-index: 20;
+            right: 560px;
+            margin: 0 auto;
+            width: 40px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+
+        }
+        .layer-21 {
+            position: absolute;
+            z-index: 21;
+            right: 510px;
+            margin: 0 auto;
+            width: 40px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+
+
+        }
+        .layer-22 {
+            position: absolute;
+            z-index: 22;
+            right: 460px;
+            margin: 0 auto;
+            width: 40px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+
+        }
+        .layer-23 {
+            position: absolute;
+            z-index: 23;
+            right: 260px;
+            margin: 0 auto;
+            width: 40px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+
+        }
+        .layer-24 {
+            position: absolute;
+            z-index: 24;
+            right: 210px;
+            margin: 0 auto;
+            width: 40px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+
+        }
+        .layer-25 {
+            position: absolute;
+            z-index: 25;
+            right: 160px;
+            margin: 0 auto;
+            width: 40px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+
+        }
+        .layer-26 {
+            position: absolute;
+            z-index: 26;
+            right: 110px;
+            margin: 0 auto;
+            width: 40px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+
+        }
+        .layer-27 {
+            position: absolute;
+            z-index: 27;
+            right: 60px;
+            margin: 0 auto;
+            width: 40px;
+            height:50px;
+            background: rgba(57, 235, 111, 0);
+            bottom: 0;
+        }
+        .layer-28 {
+            position: absolute;
+            z-index: 37;
+            height: 175px;
+            width: 70px;
+            background: rgba(28, 14, 230, 0.356);
+            bottom: 0;
+            right: 750px;
+
+        }
+        .layer-29 {
+            position: absolute;
+            z-index: 38;
+            height: 250px;
+            width: 150px;
+            background: rgba(4, 40, 245, 0.486);
+            bottom: 0;
+            right: 300px;
+
+        }
+        
+        .layer-35 {
+            z-index: 45;
+            height: 40px;
+            width: 40px;
+            background: rgb(53, 54, 39);
+            bottom: 190px;
+            right: 700px;
+
+        }
+        .layer-36 {
+            z-index: 46;
+            height: 40px;
+            width: 40px;
+            background: rgb(53, 54, 39);
+            bottom: 150px;
+            right: 600px;
+
+
+        }
+        .layer-37 {
+            z-index: 47;
+            height: 40px;
+            width: 40px;
+            background: rgb(53, 54, 39);
+            bottom: 110px;
+            right: 500px;
+
+
+        }
+        .layer-38 {
+            position: absolute;
+            z-index: 48;
+            height: 30px;
+            width: 30px;
+            background: rgb(55, 56, 39);
+            bottom: 160px;
+            right: 130px;
+
+        }
+            .rabbit {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                background: burlywood;
+                border-radius: 50%;
+            }
+            input[type=checkbox]:focus {
+                appearance: none;
+                outline: none;
+            }
+            input:checked {
+                counter-increment: score;
+            }
+            .score::after {
+                content: counter(score);
+            }
+
+            .rabbit::before, .rabbit::after {
+                content: '';
+                position: absolute;
+                background: burlywood;
+                border-radius: 50%;
+                width: 20px;
+                height: 40px;
+            }
+            .rabbit::before {
+                top: -35px;
+                left: 5px;
+                transform: rotate(-20deg);
+            }
+            .rabbit::after {
+                top: -35px;
+                right: 5px;
+                transform: rotate(20deg);
+            }
+            .eye {
+                position: absolute;
+                background: black;
+                border-radius: 50%;
+                width: 5px;
+                height: 5px;
+
+                animation-name: blink;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes blink{
+                0% {
+                height: 5px;
+                }
+                5% {
+                transform: translate(0px, 2px);
+                 height: 1px;
+                }
+                10% {
+                transform: translate(0px, 0px);
+                height: 5px;
+                }
+            }
+            .eye.left {
+                left: 15px;
+                top: 15px;
+            }
+            .eye.right {
+                right: 15px;
+                top: 15px;
+            }
+            .nose {
+                position: absolute;
+                background: pink;
+                width: 8px;
+                height: 8px;
+                left: calc(50% - 4px);
+                top: 30px;
+                border-radius: 50%;
+            }
+            .rabbit1  {
+                top: 220px;
+                left: 80px;
+                
+                animation-name: layer;
+                animation-duration: 3s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+            }
+            @keyframes layer {
+            0% {
+              top: 220px;
+            }
+            25% {
+                top: 300px;
+            }
+            100% {
+                top: 220px;
+            }
+            }
+            .rabbit1 input[type=Checkbox]{
+                position: absolute;
+                appearance: none;
+                cursor: pointer;
+                z-index: 2;
+                width: 100%;
+                height: 80px;
+            }
+            .rabbit2 {
+                top: 310px;
+                left: 230px;
+
+                animation-name: layer2;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+            }
+            @keyframes layer2 {
+                0% {
+                  top: 310px;
+                }
+                25% {
+                    top: 390px;
+                }
+                100% {
+                    top: 310px;
+                }
+            }
+            .rabbit2 input[type=Checkbox]{
+                position: absolute;
+                appearance: none;
+                cursor: pointer;
+                z-index: 2;
+                width: 100%;
+                height: 80px;
+            }
+            .rabbit3 {
+                top:319px;
+                left: 302px;
+                animation-name: movimiento;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+            }
+            @keyframes movimiento {
+                0% {
+                    transform: translateX(30%);
+                }
+                70% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(0) translateY(100px);
+                }
+            }
+            
+              .rabbit3 input[type=Checkbox]{
+                position: absolute;
+                appearance: none;
+                cursor: pointer;
+                z-index: 2;
+                width: 100%;
+                height: 80px;
+            }
+            .rabbit4 {
+                top: 260px;
+                left: 700px;
+                animation-name: movimiento2;
+                animation-duration: 8s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+
+            }
+            @keyframes movimiento2 {
+                0% {
+                    transform: translateX(30%);
+                }
+                70% {
+                    transform: translateX(50%);
+                }
+                80% {
+                    transform: translateX(80%) rotate(60deg);
+                }
+                100% {
+                    transform: translateX(0) translateY(200px) rotate(360deg);
+                }
+            }
+            .rabbit4 input[type=Checkbox]{
+                position: absolute;
+                appearance: none;
+                cursor: pointer;
+                z-index: 2;
+                width: 100%;
+                height: 80px;
+            }
+            .rabbit5 {
+                top: 260px;
+                left: 360px;
+                animation-name: movimiento3;
+                animation-duration: 10s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+            }
+            @keyframes movimiento3 {
+                0% {
+                    transform: translateX(400%);
+                }
+                70% {
+                    transform: translateX(100%);
+                }
+                80% {
+                    transform: translateX(0) translateY(180px) rotate(360deg) translateY(-10px);
+                }
+                100% {
+                    transform: translateX(0) translateY(200px) rotate(360deg) translateY(-50px);
+                 }
+            }
+            .rabbit4 input[type=Checkbox]{
+                position: absolute;
+                appearance: none;
+                cursor: pointer;
+                z-index: 2;
+                width: 100%;
+                height: 80px;
+            }
+            .rabbit6 {
+                top: 230px;
+                left: 950px;
+                animation-name: movimiento4;
+                animation-duration: 8s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+            }
+            @keyframes movimiento4 {
+                0% {
+                    transform: translateX(0) translateY(0) rotate(0deg);
+                }
+                50% {
+                    transform: translateX(50px) translateY(-70px) rotate(160deg);
+                }
+                70% {
+                    transform: translateX(100px) translateY(0) rotate(720deg);
+                }
+                100% {
+                    transform: translateX(50px) translateY(100px) rotate(480deg) scale(0.5);
+                }
+            }
+            .rabbit5 input[type=Checkbox]{
+                position: absolute;
+                appearance: none;
+                cursor: pointer;
+                z-index: 2;
+                width: 100%;
+                height: 80px;
+            }
+          .sun {
+            background-color: yellow;
+            border-radius: 50%; /* creates a circular background */
+            height: 10vh; /* makes the sun the size of the viewport */
+            aspect-ratio: 1 / 1;
+            animation: 4s linear 0s infinite alternate sun-rise;
+          }
+          
+          @keyframes sun-rise {
+            from {
+              /* pushes the sun down past the viewport */
+              transform: translateY(10vh);
+            }
+            to {
+              /* returns the sun to its default position */
+              transform: translateY(0);
+            }
+          }
+          .cloud {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M48 24c-1.7 0-3.3.3-4.8 1-2.7-4.2-7.4-7-12.7-7-7.4 0-13.4 5.6-14.6 12.7-4.5.5-8 4.3-8 8.9 0 4.9 4 9 9 9h31c5 0 9-4 9-9s-4-9-9-9z" fill="%2311C7F5"/></svg>') no-repeat center;
+            background-size: cover;
+            animation: 4s linear 0s infinite alternate rise, 4s linear 0s infinite alternate bounce;
+        }
+        @keyframes rise {
+            from {
+                transform: translateY(9vh);
+            }
+            to {
+                transform: translateY(30vh);
+            }
+        }
+        @keyframes bounce {
+            from {
+                transform: translateX(20vw);
+            }
+            to {
+                transform: translateX(23vw);
+            }
+        }
+        .cloud1 {
+            top: 05vh;
+            left: 1vw;
+            animation-delay: 0s;
+        }
+        .cloud2 {
+            top: 26vh;
+            left: 17vw;
+            animation-delay: 0s;
+        }
+        .cloud3 {
+            top: 12vh;
+            left: 8vw;
+            animation-delay: 0s;
+        }
+        .cloud4 {
+            top: 07vh;
+            left: 25vw;
+            animation-delay: 0s;
+        }
+        .eagle {
+            position: absolute;
+            background-color: rgb(12, 12, 12);
+            width: 2vw;
+            height: 2vh;
+            clip-path: polygon(50% 0%, 60% 40%, 90% 30%, 70% 50%, 80% 60%, 50% 70%, 20% 60%, 30% 50%, 10% 30%, 40% 40%);
+            animation: 4s linear 0s infinite alternate eagle-rise, 4s linear 0s infinite alternate eagle-bounce;
+        }
+        @keyframes eagle-rise {
+            from {
+                transform: translateY(10vh);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        .eagle1 {
+            top: 5vh;
+            left: 10vw;
+            animation-delay: 0s;
+        }
+        .eagle2 {
+            top: 26vh;
+            left: 46vw;
+            animation-delay: 0s;
+        }
+        .eagle3 {
+            top: 12vh;
+            left: 58vw;
+            animation-delay: 0s;
+        }
+        .fish {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            bottom: 15px;
+            background-size: cover;
+            animation: 4s linear 0s infinite alternate rise, 4s linear 0s infinite alternate bounce;
+        }
+        @keyframes swim {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        .fish1 {
+            top: 5vh;
+            left: 10vw;
+            animation-delay: 0s;
+        }
+        .fish2 {
+            top: 26vh;
+            left: 46vw;
+            animation-delay: 0s;
+        }
+        .fish3 {
+            top: 12vh;
+            left: 58vw;
+            animation-delay: 0s;
+        }
+        .text {
+            position: absolute;
+            z-index: 30;
+            bottom: 5px;
+            font-size: 24px;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+        }
+        .animation {
+            position: absolute;
+            z-index: 31;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 350px;
+            background: linear-gradient(to bottom, rgba(204, 255, 255, 0) 0%, rgba(204, 255, 255, 1) 100%);
+        }
+        @keyframes fish-movement {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(20px); }
+            100% { transform: translateY(0); }
+        }
+        @keyframes fish-movement {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+            100% { transform: translateX(0); }
+        }
+        .fish {
+            position: absolute;
+            z-index: 30;
+            width: 20px;
+            height: 10px;
+            background: orange;
+            border-radius: 50%;
+            animation: fish-movement 2s linear infinite;
+        }
+        .fish::before {
+            content: '';
+            position: absolute;
+            top: 70%;
+            left: 70%;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-left-color: orange;
+            border-right: 0;
+            margin-top: -10px;
+            margin-left: -10px;
+        }
+        .fish1 {
+            top: 86vh;
+            left: 400px;
+            animation-delay: 0s;
+        }
+        .fish2 {
+            top: 71vh;
+            left: 400px;
+            animation-delay: 0s;
+        }
+        .fish3 {
+            top: 76vh;
+            left: 790px;
+            animation-delay: 0s;
+        }
+        .fish4 {
+            top: 65vh;
+            left: 825px;
+            animation-delay: 0s;
+        }
+        .fish5 {
+            top: 56vh;
+            left: 750px;
+            animation-delay: 0s;
+        }
+        .bush {
+            z-index: 12;
+            position: absolute;
+            background: rgb(57, 235, 111);
+            border-radius: 50%;
+        }
+        .bush1 {
+            width: 60px;
+            height: 90px;
+            bottom: 0px;
+            left: 30px;
+        }
+        .bush1::before, .bush1::after {
+            content: '';
+            position: absolute;
+            background: rgb(57, 235, 111);
+            border-radius: 50%;
+        }
+        .bush1::before {
+            width: 50px;
+            height: 60px;
+            bottom: 01px;
+            left: -30px;
+        }
+        .bush1::after {
+            width: 50px;
+            height: 60px;
+            bottom: 01px;
+            right: -30px;
+        }
+        .bush2 {
+            z-index: index 100;
+            width: 60px;
+            height: 70px;
+            bottom: 0px;
+            left: 480px;
+        }
+        .bush2::before, .bush2::after {
+            content: '';
+            position: absolute;
+            background: rgb(57, 235, 111);
+            border-radius: 50%;
+        }
+        .bush2::before {
+            width: 50px;
+            height: 65px;
+            bottom: 01px;
+            left: -30px;
+        }
+        .bush2::after {
+            width: 50px;
+            height: 50px;
+            bottom: 01px;
+            right: -30px;
+        }
+        .bush3 {
+            z-index: index 100;
+            width: 60px;
+            height: 85px;
+            bottom: 0px;
+            left: 290px;
+        }
+        .bush3::before, .bush3::after {
+            content: '';
+            position: absolute;
+            background: rgb(57, 235, 111);
+            border-radius: 50%;
+        }
+        .bush3::before {
+            width: 50px;
+            height: 70px;
+            bottom: 01px;
+            left: -30px;
+        }
+        .bush3::after {
+            width: 50px;
+            height: 70px;
+            bottom: 01px;
+            right: -30px;
+        }
+        .bush4 {
+            z-index: index 100;
+            width: 60px;
+            height: 80px;
+            bottom: 0px;
+            left: 150px;
+        }
+        .bush4::before, .bush4::after {
+            content: '';
+            position: absolute;
+            background: rgb(57, 235, 111);
+            border-radius: 50%;
+        }
+        .bush4::before {
+            width: 50px;
+            height: 50px;
+            bottom: 01px;
+            left: -30px;
+        }
+        .bush4::after {
+            width: 50px;
+            height: 50px;
+            bottom: 01px;
+            right: -30px;
+        }
+        .bush5 {
+            z-index: index 100;
+            width: 60px;
+            height: 40px;
+            bottom: 0px;
+            left: 260px;
+        }
+        .bush5::before, .bush5::after {
+            content: '';
+            position: absolute;
+            background: rgb(57, 235, 111);
+            border-radius: 50%;
+        }
+        .bush5::before {
+            width: 50px;
+            height: 50px;
+            bottom: 01px;
+            left: -30px;
+        }
+        .bush6 {
+            z-index: index 100;
+            width: 60px;
+            height: 80px;
+            bottom: 0px;
+            left: 600px;
+        }
+        .bush6::before, .bush6::after {
+            content: '';
+            position: absolute;
+            background: rgb(57, 235, 111);
+            border-radius: 50%;
+        }
+        .bush6::before {
+            width: 50px;
+            height: 50px;
+            bottom: 01px;
+            left: -30px;
+        }
+        .bush7 {
+            z-index: index 100;
+            width: 60px;
+            height: 90px;
+            bottom: 0px;
+            left: 680px;
+        }
+        .bush7::before, .bush7::after {
+            content: '';
+            position: absolute;
+            background: rgb(57, 235, 111);
+            border-radius: 50%;
+        }
+        .bush7::before {
+            width: 50px;
+            height: 50px;
+            bottom: 01px;
+            left: -30px;
+        }
+
+        .bush8 {
+            z-index: index 100;
+            width: 60px;
+            height: 90px;
+            bottom: 40px;
+            left: 480px;
+        }
+        .bush8::before, .bush8::after {
+            content: '';
+            position: absolute;
+            background: rgb(57, 235, 111);
+            border-radius: 50%;
+        }
+        .bush8::before {
+            width: 50px;
+            height: 50px;
+            bottom: 01px;
+            left: -30px;
+        }
+        .bush8::after {
+            width: 50px;
+            height: 50px;
+            bottom: 01px;
+            right: -30px;
+        }
+        .bush9 {
+            z-index: index 100;
+            width: 60px;
+            height: 75px;
+            bottom: 0px;
+            left: 930px;
+        }
+        .bush9::before, .bush9::after {
+            content: '';
+            position: absolute;
+            background: rgb(57, 235, 111);
+            border-radius: 50%;
+        }
+        .bush9::before {
+            width: 50px;
+            height: 50px;
+            bottom: 01px;
+            left: -30px;
+        }
+        .bush9::after {
+            width: 50px;
+            height: 50px;
+            bottom: 01px;
+            right: -30px;
+        }
+        .bush10 {
+            z-index: index 100;
+            width: 60px;
+            height: 75px;
+            bottom: 0px;
+            left: 950px;
+        }
+        .bush10::before, .bush10::after {
+            content: '';
+            position: absolute;
+            background: rgb(57, 235, 111);
+            border-radius: 50%;
+        }
+        .bush10::before {
+            width: 50px;
+            height: 50px;
+            bottom: 01px;
+            left: -30px;
+        }
+        .bush10::after {
+            width: 50px;
+            height: 50px;
+            bottom: 01px;
+            right: -30px;
+        }
+        .bush11 {
+            z-index: index 100;
+            width: 60px;
+            height: 75px;
+            bottom: 0px;
+            left: 980px;
+        }
+        .bush11::before, .bush11::after {
+            content: '';
+            position: absolute;
+            background: rgb(57, 235, 111);
+            border-radius: 50%;
+        }
+        .bush11::before {
+            width: 50px;
+            height: 50px;
+            bottom: 01px;
+            left: -30px;
+        }
+        .bush11::after {
+            width: 50px;
+            height: 50px;
+            bottom: 01px;
+            right: -30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="computer">
+
+        <div class="layer-1"> </div>
+        <div class="layer-2"></div>
+        <div class="left-ear--outer"></div>
+        <div class="left-ear--inner"></div>
+        <div class="right-ear--outer"></div>
+        <div class="right-ear--inner"></div>
+        <div class="head"></div>
+        <div class="head_eye head_eye--left"></div>
+        <div class="head_eye head_eye--right"></div>
+        <div class="layer-3"></div>
+        <div class="layer-4"></div>
+        <div class="layer-5"></div>
+        <div class="layer-6"></div>
+        <div class="layer-7"></div>
+        <div class="layer-8"></div>
+        <div class="layer-9"></div>
+        <div class="layer-10"></div>
+        <div class="layer-11"></div>
+        <div class="layer-12"></div>
+        <div class="layer-13"></div>
+        <div class="layer-14"></div>
+        <div class="layer-15"></div>
+        <div class="layer-16"></div>
+        <div class="layer-17"></div>
+        <div class="layer-18"></div>
+        <div class="layer-19"></div>
+        <div class="layer-20"></div>
+        <div class="layer-21"></div>
+        <div class="layer-22"></div>
+        <div class="layer-23"></div>
+        <div class="layer-24"></div>
+        <div class="layer-25"></div>
+        <div class="layer-26"></div>
+        <div class="layer-27"></div>
+        <div class="layer-28"></div>
+        <div class="layer-29"></div>
+        <div class="layer-30"></div>
+        <div class="layer-31"></div>
+        <div class="layer-32"></div>
+        <div class="layer-33"></div>
+        <div class="layer-34"></div>
+        <div class="layer-35"></div>
+        <div class="layer-36"></div>
+        <div class="layer-37"></div>
+        <div class="layer-38"></div>
+        <div class="layer-39"></div>
+        <div class="layer-40"></div>
+        <div class="layer-41"></div>
+        <div class="layer-42"></div>
+        <div class="layer-43"></div>
+        <div class="layer-44"></div>
+        <div class="layer-45"></div>
+        <div class="layer-46"></div>
+        <div class="layer-47"></div>
+        <div class="sun"></div>
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+        <div class="cloud cloud4"></div>
+        <div class="eagle eagle1"></div>
+        <div class="eagle eagle2"></div>
+        <div class="eagle eagle3"></div>
+        <div class="fish fish1"></div>
+        <div class="fish fish2"></div>
+        <div class="fish fish3"></div>
+        <div class="fish fish4"></div>
+        <div class="fish fish5"></div>
+        <div class="rabbit rabbit1">
+            <input type="checkbox">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+        </div>
+        <div class="rabbit rabbit2">
+            <input type="checkbox">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+        </div>
+        <div class="rabbit rabbit3">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+        </div>
+        <div class="rabbit rabbit4">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+        </div>
+        <div class="rabbit rabbit5">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+        </div>
+        <div class="rabbit rabbit6">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+        </div>
+        <div class="bush bush1"></div>
+        <div class="bush bush2"></div>
+        <div class="bush bush3"></div>
+        <div class="bush bush4"></div>
+        <div class="bush bush5"></div>
+        <div class="bush bush6"></div>
+        <div class="bush bush7"></div>
+        <div class="bush bush8"></div>
+        <div class="bush bush9"></div>
+        <div class="bush bush10"></div>
+        <div class="bush bush11"></div>
+</body>
+</html>
